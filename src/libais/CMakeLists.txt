@@ -39,6 +39,10 @@ install(TARGETS ais LIBRARY DESTINATION lib)
 file(GLOB HEADERS *.h)
 install(FILES ${HEADERS} DESTINATION include/libais)
 
+set(PACKAGE_VERSION 0.15+)
+set_target_properties(ais PROPERTIES VERSION ${PACKAGE_VERSION} SOVERSION 1)
+
+
 # Not yet handled:
 # ais_py.cpp
 # ais_decode_normed.cpp 
