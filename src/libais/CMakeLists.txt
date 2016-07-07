@@ -39,7 +39,7 @@ install(TARGETS ais LIBRARY DESTINATION lib)
 file(GLOB HEADERS *.h)
 install(FILES ${HEADERS} DESTINATION include/libais)
 
-set(PACKAGE_VERSION 0.15+)
+set(PACKAGE_VERSION 0.15+1)
 set_target_properties(ais PROPERTIES VERSION ${PACKAGE_VERSION} SOVERSION 1)
 
 
