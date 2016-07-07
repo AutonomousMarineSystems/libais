@@ -30,7 +30,14 @@ ais24.cpp
 ais25.cpp
 ais26.cpp
 ais27.cpp
+vdm.cpp
+decode_body.cpp
 )
+
+install(TARGETS ais LIBRARY DESTINATION lib)
+
+file(GLOB HEADERS *.h)
+install(FILES ${HEADERS} DESTINATION include/libais)
 
 # Not yet handled:
 # ais_py.cpp
